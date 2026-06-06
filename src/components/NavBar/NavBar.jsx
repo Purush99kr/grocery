@@ -12,22 +12,22 @@ const NavBarMenu = [
   {
     id: 2,
     title: "Products",
-    url: "/products",
+    url: "/",
   },
   {
     id: 3,
     title: "About",
-    url: "/about",
+    url: "/",
   },
   {
     id: 4,
     title: "Shop",
-    url: "/shop",
+    url: "/",
   },
   {
     id: 5,
     title: "Contact",
-    url: "/contact",
+    url: "/",
   },
 ];
 const NavBar = () => {
@@ -39,7 +39,8 @@ const NavBar = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5, delay: 0.5 }}
-          className="container flex justify-between items-center py-4 md:pt-4">
+          className="container flex justify-between items-center py-4 md:pt-4"
+        >
           {/* logo section  */}
           <Logo />
           {/* menu section  */}
@@ -62,7 +63,8 @@ function Menu() {
           <li key={link.id} className="text-xl">
             <a
               href={link.url}
-              className=" inline-block py-1 px-3 font-semibold hover:text-primary hover:shadow-[0_3px_0_-1px_#ef4444]">
+              className=" inline-block py-1 px-3 font-semibold hover:text-primary hover:shadow-[0_3px_0_-1px_#ef4444]"
+            >
               {link.title}
             </a>
           </li>
